@@ -10,8 +10,7 @@ if($_POST){
     }
 $nameLengthIsvalid = nameLengthIsvalid($_POST['fname']);
 echo '</br>';
-var_dump($nameLengthIsvalid);
-if(!$nameLengthIsvalid[isValid]);
-    //on fait notre traitement
+$saltedName = addSalt($_POST['fname']);
+var_dump($saltedName);
 }
  ?>

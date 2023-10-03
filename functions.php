@@ -24,4 +24,11 @@ function nameLengthIsvalid($nameTovalid){
 
 }
 
+function addSalt($nameToSalt){
+    $salt = 'unPeuDeSel123!';
+    $saltedName =$salt.$nameToSalt.$salt;
+
+    return $saltedName;
+}
+
 ?>
